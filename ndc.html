@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Di tích mộ cụ Nguyễn Đình Chiểu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6f0;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #ff66b2;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #ff3385 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin: 0 15px;
+        }
+        header h1 {
+            float: left;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        .content {
+            padding: 20px;
+            background: #fff;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        footer {
+            background: #ff66b2;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #ff3385;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #e60073;
+        }
+        .button-group {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+        }
+        .slides {
+            display: none;
+        }
+        .slide-img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .dot-container {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+        @media only screen and (max-width: 768px) {
+            header nav {
+                float: none;
+                text-align: center;
+            }
+            header h1 {
+                float: none;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Di tích mộ cụ Nguyễn Đình Chiểu</h1>
+            <nav>
+                <a href="#overview">Giới thiệu khái quát</a>
+                <a href="#details">Giới thiệu chi tiết</a>
+                <a href="#hours">Thời gian hoạt động</a>
+                <a href="#location">Vị trí địa lí</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="overview" class="content">
+            <h2>Giới thiệu khái quát</h2>
+            <img src="link-to-image1.jpg" alt="Hình ảnh giới thiệu khái quát">
+            <p>Di tích mộ cụ Nguyễn Đình Chiểu là một địa điểm lịch sử quan trọng, nơi yên nghỉ của nhà thơ, nhà giáo, nhà yêu nước Nguyễn Đình Chiểu.</p>
+            <div class="button-group">
+                <button onclick="alert('Thêm thông tin khái quát')">Thêm thông tin</button>
+                <button onclick="alert('Tìm hiểu thêm')">Tìm hiểu thêm</button>
+            </div>
+        </section>
+
+        <section id="details" class="content">
+            <h2>Giới thiệu chi tiết</h2>
+            <img src="link-to-image2.jpg" alt="Hình ảnh giới thiệu chi tiết">
+            <p>Nguyễn Đình Chiểu (1822-1888) là một trong những nhà văn hóa lớn của Việt Nam. Ông nổi tiếng với những tác phẩm văn học như "Lục Vân Tiên", "Dương Từ - Hà Mậu" và những bài thơ, văn yêu nước. Mộ của ông nằm tại tỉnh Bến Tre và được xem là di tích văn hóa, lịch sử quan trọng của cả nước.</p>
+            <div class="button-group">
+                <button onclick="alert('Đọc tác phẩm Lục Vân Tiên')">Đọc tác phẩm Lục Vân Tiên</button>
+                <button onclick="alert('Xem thêm tác phẩm')">Xem thêm tác phẩm</button>
+            </div>
+        </section>
+
+        <section id="hours" class="content">
+            <h2>Thời gian hoạt động</h2>
+            <img src="link-to-image3.jpg" alt="Hình ảnh thời gian hoạt động">
+            <p>Di tích mở cửa từ 8:00 sáng đến 5:00 chiều hàng ngày, bao gồm cả các ngày lễ.</p>
+            <div class="button-group">
+                <button onclick="alert('Xem lịch hoạt động')">Xem lịch hoạt động</button>
+                <button onclick="alert('Liên hệ')">Liên hệ</button>
+            </div>
+        </section>
+
+        <section id="location" class="content">
+            <h2>Vị trí địa lí</h2>
+            <img src="link-to-image4.jpg" alt="Hình ảnh vị trí địa lí">
+            <p>Di tích mộ cụ Nguyễn Đình Chiểu tọa lạc tại xã An Đức, huyện Ba Tri, tỉnh Bến Tre, Việt Nam. Khách tham quan có thể dễ dàng đến di tích bằng các phương tiện giao thông công cộng hoặc xe riêng.</p>
+            <div class="button-group">
+                <button onclick="alert('Xem bản đồ')">Xem bản đồ</button>
+                <button onclick="alert('Chỉ đường')">Chỉ đường</button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Di tích mộ cụ Nguyễn Đình Chiểu. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>

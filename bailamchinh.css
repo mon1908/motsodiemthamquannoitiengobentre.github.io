@@ -1,0 +1,105 @@
+body {
+  font-family: Arial;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  background-color: aqua;
+}
+
+h2 {
+  font-size: 20px;
+  color: blue;
+  text-align: center;
+  margin-bottom: 20px;
+  vertical-align: bottom; /* Sửa lại */
+}
+
+p {
+  text-align: left;
+  margin-top: 0;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+#menu-container {
+  display: flex;
+  flex-direction: column; /* Đặt phần tử con theo chiều dọc */
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Để menu luôn căn giữa theo chiều dọc */
+}
+
+#menu-btn {
+  margin-bottom: 20px; /* Tạo khoảng cách giữa nút và menu */
+  padding: 10px 20px; /* Tăng kích thước nút */
+  cursor: pointer;
+  background-color: #007bff;
+  color: yellow;
+  border: 5px solid black; /* Viền nút rõ nét hơn */
+  border-radius: 15px; /* Bo góc nút */
+  text-align: center;
+  font-size: 10px; /* Tăng kích thước font chữ */
+  font-weight: bold; /* Làm chữ trong nút đậm hơn */
+}
+
+#menu-list {
+  display: none; /* Đảm bảo menu chỉ xuất hiện khi cần */
+  list-style-type: none;
+  padding: 15px; /* Tăng padding tổng thể của menu */
+  margin: 0; /* Giảm khoảng cách trên dưới */
+  border: 4px solid black; /* Đường viền to hơn để nổi bật */
+  width: 400px; /* Tăng chiều rộng menu */
+  background-color:blue;
+  color:white;
+  text-align: center;
+  font-size: 30px; /* Tăng kích thước chữ */
+  border-radius: 20px; /* Bo góc menu */
+}
+
+#menu-list li {
+  padding: 15px; /* Tăng khoảng cách trong từng mục */
+  border-bottom: 5px solid black; /* Đường kẻ rõ nét hơn */
+  cursor: pointer;
+  text-align: center;
+}
+
+#menu-list li:last-child {
+  border-bottom: none; /* Bỏ đường kẻ dưới mục cuối */
+}
+
+#menu-list li:hover {
+  background-color: aqua; /* Màu nổi bật khi rê chuột */
+  font-weight: bold; /* Làm chữ đậm khi hover */
+}
+.image-button {
+            display: inline-block;
+            border: none;
+            background: none;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .image-button img {
+            width: 10px;
+            hover:10px}/* Đặt kích thước tùy ý */
+a {color:white; 
+            text-decoration: none;
+            }
+.button {
+            background-color: yellow; /* Màu nền vàng */
+            color: black; /* Chữ đen */
+            border-radius: 8px; /* Bo góc */
+            border: 2px solid black; /* Viền đậm */
+            padding: 10px 20px;
+            text-align: center; /* Căn giữa chữ bên trong nút */
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .button-container {
+            text-align: center; /* Căn giữa nút */
+            margin-top: 50px;
+        }
